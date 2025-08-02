@@ -1345,4 +1345,332 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .service-content-box { text-align: left; }
 
+  /* 
+    *Testionials
+    */
+
+  .testimonials-title { margin-bottom: 25px; }
+
+  .testimonials-list {
+    gap: 30px;
+    margin: 0 -30px;
+    padding: 30px;
+    padding-bottom: 35px;
+  }
+
+  .content-card {
+    padding: 30px;
+    padding-top: 25px;
+  }
+
+  .testimonials-avatar-box {
+    transform: translate(30px, -30px);
+    border-radius: 20px;
+  }
+
+  .testimonials-avatar-box img { width: 80px; }
+
+  .testimonials-item-title {
+    margin-bottom: 10px;
+    margin-left: 95px;
+  }
+
+  .testmonials-text {
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+  }
+
+  /* 
+    *Testionials modal
+    */
+
+  .modal-container { padding: 20px; }
+
+  .testmonials-modal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 25px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  .modal-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-avatar-box {
+    border-radius: 18px;
+    margin-bottom: 0;
+  }
+
+  .modal-avatar-box img { width: 65px; }
+
+  .modal-img-wrapper > img {
+    display: flex;
+    flex-grow: 1;
+    width: 35px;
+  }
+
+  /* 
+    *Clients
+    */
+
+  .clients-list {
+    gap: 50px;
+    margin: 0 -30px;
+    padding: 45px;
+    scroll-padding-inline: 45px;
+  }
+
+  .clients-item { min-width: calc(33.33% - 35px); }
+
+  /* 
+    *Resume
+    */
+
+  .timeline-list { margin-left: 65px; }
+
+  .timeline-item:not(:last-child)::before { left: -40px; }
+
+  .timeline-item::after {
+    height: 8px;
+    width: 8px;
+    left: -43px;
+  }
+
+  .skills-item:not(:last-child) { margin-bottom: 25px; }
+
+  /* 
+    *Portfolio, Blog
+    */
+
+  .project-img, .blog-banner-box { border-radius: 16px; }
+
+  .blog-post-list { gap: 30px; }
+
+  .blog-content { padding: 25px; }
+
+  /* 
+    *Contact
+    */
+
+  .mapbox {
+    height: 380px;
+    border-radius: 18px;
+  }
+
+  .input-wrapper {
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .form-input { padding: 15px 20px; }
+
+  textarea.form-input { margin-bottom: 30px; }
+
+  .form-btn {
+    --fs-6: 16px;
+    padding: 16px 20px;
+  }
+
+  .form-btn ion-icon { font-size: 18px; }
+ 
+}
+
+/**
+  * responsive larger than 768px screen
+  */
+
+@media (min-width: 768px) {
+
+  /**
+    * Reused Style
+    */
+
+  .sidebar, article { width: 700px; }
+
+  .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
+
+  /**
+    * Sidebar
+    */
+  
+  .contacts-list { 
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 15px;
+  }
+
+  /**
+    * Navbar
+    */
+  
+  .navbar-link { --fs-8: 15px; }
+
+  /**
+    * About
+    */
+  
+  /**
+    * Testimonals modal
+    */
+  
+  .testmonials-modal {
+    gap: 35px;
+    max-width: 680px;
+  }
+
+  .modal-avatar-box img { width: 80px; }
+
+  /**
+    * Portfolio
+    */
+
+  .article-title { padding-bottom: 20px; }
+
+  .filter-select-box { display: none; }
+
+  .filter-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    padding-left: 5px;
+    margin-bottom: 30px;
+  }
+  
+  .filter-item button {
+    color: var(--light-gray);
+    font-size: var(--fs-5);
+    transition: var(--transition-1);
+  }
+
+  .filter-item button:hover { color: var(--light-gray-70); }
+
+  .filter-item button.active { color: var(--orange-yellow-crayola); }
+
+  /**
+    * Portfolio and Blog grid
+    */
+
+  .project-list, .blog-post-list { grid-template-columns: 1fr 1fr; }
+
+  /**
+    * Contact
+    */
+
+  .input-wrapper { grid-template-columns: 1fr 1fr; }
+
+  .form-btn {
+    width: max-content;
+    margin-left: auto;
+  }
+
+}
+
+/**
+  * responsive larger than 1024px screen
+  */
+
+@media (min-width: 1024px) {
+
+  /**
+    *Custom Property
+    */
+
+  :root {
+
+    /**
+      * shadow
+      */
+
+    --shadow-1 : -4px 8px 24px hsla(0, 0%, 0%, 0.125);
+    --shadow-2 : 0 16px 30px hsla(0, 0%, 0%, 0.125);
+    --shadow-3 : 0 16px 40px hsla(0, 0%, 0%, 0.125);
+
+  }
+
+  /**
+    *Reused Style
+    */
+
+  .sidebar, article {
+    width: 950px;
+    box-shadow: var(--shadow-2);
+  }
+
+  /**
+    *Main
+    */
+
+  main { margin-bottom: 60px; }
+
+  .main-content {
+    position: relative;
+    width: max-content;
+    margin: auto;
+  }
+
+  /**
+    *Navbar
+    */
+
+  .navbar {
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: max-content;
+    border-radius: 0 20px;
+    padding: 0 20px;
+    box-shadow: none;
+  }
+
+  .navbar-list { 
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .navbar-link { font-weight: var(--fw-500); }
+
+  /**
+    *About
+    */
+
+  /**
+    *Service
+    */
+
+  .service-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 25px;
+  }
+
+  /**
+    *Testimonals
+    */
+  
+  .testimonials-item { min-width: calc(50% - 15px); }
+
+  /**
+    *Clients
+    */
+
+  .clients-item { min-width: calc(25% - 38px); }
+
+  /**
+    *Portfolio
+    */
+
+  .project-list { grid-template-columns: repeat(3, 1fr); }
+
+  /**
+    *Blog
+    */
+
+  .blog-banner-box { height: 230px; }
+
 }
